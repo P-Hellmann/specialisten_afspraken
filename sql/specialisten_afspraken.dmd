@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="specialisten_afspraken" id="FF2B0F34-4C3C-A1D1-39E2-112FC93FE0A7" version="3.5">
+<createdBy>phtij</createdBy>
+<createdTime>2025-04-08 06:54:52 UTC</createdTime>
+<ownerDesignName>specialisten_afspraken</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FF2B0F34-4C3C-A1D1-39E2-112FC93FE0A7</designId>
+</OSDM_Design>
