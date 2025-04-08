@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+    <a class="navbar-brand" href="{{ path('app_home') }}">SA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex justify-content-between collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ path('app_home') }}">Home</a>
+            </li>
+        </ul>
+        <div>
+            <ul class="navbar-nav mr-auto">
+                {% if app.user %}
+                    <li>
+                        <a class="nav-link" href="{{ path('app_logout') }}">Logout</a>
+                    </li>
+                {% else %}
+                <li>
+                    <a class="nav-link" href="{{ path('app_login') }}">Login</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="{{ path('app_register') }}">Register</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

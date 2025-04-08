@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PatientController!{% endblock %}
+
+{% block body %}
+    <div>
+        <table>
+            <tr>
+                <th>Datum</th>
+                <th>Tijd</th>
+                <th>Specialisme</th>
+                <th>Specialist</th>
+                <th>Onderwerp</th>
+                <th>Problemen</th>
+            </tr>
+            {% for appointment in app.user.patientAppointments %}
+                <tr>
+                    <td>{{ appointment.date|date('d-m-Y') }}</td>
+                    <td>{{ appointment.time }}</td>
+                    <td>{{ appointment.specialist.specialization }}</td>
+                    <td>{{ appointment.specialist }}</td>
+                    <td>{{ appointment.subject }}</td>
+                    <td>{{ appointment.problems }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
