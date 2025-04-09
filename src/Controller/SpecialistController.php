@@ -14,7 +14,6 @@ final class SpecialistController extends AbstractController
     public function index(): Response
     {
         return $this->render('specialist/index.html.twig', [
-            'controller_name' => 'SpecialistController',
         ]);
     }
 }

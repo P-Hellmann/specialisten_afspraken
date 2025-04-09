@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PatientController!{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block body %}
     <div>
         <table>
             <tr>
-                <th>Datum</th>
-                <th>Tijd</th>
-                <th>Specialisme</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Specialization</th>
                 <th>Specialist</th>
-                <th>Onderwerp</th>
-                <th>Problemen</th>
+                <th>Subject</th>
+                <th>Problems</th>
             </tr>
             {% for appointment in app.user.patientAppointments %}
                 <tr>
